@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Replica</title>
+    <title>YouTube Clone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <header>
         <h1>YouTube Clone</h1>
-        <input type="text" placeholder="Search..." id="search">
+        <input type="text" placeholder="Search...">
         <button>Search</button>
     </header>
 
     <main>
+        <!-- Main Video Player -->
         <section id="video-player">
-            <iframe id="main-video" width="800" height="450" 
+            <iframe id="main-video" width="800" height="450"
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
                 frameborder="0" allowfullscreen>
             </iframe>
             <h2 id="video-title">Rick Astley - Never Gonna Give You Up</h2>
         </section>
 
+        <!-- Suggested Videos -->
         <section id="suggested-videos">
             <h3>Suggested Videos</h3>
             <div class="video-list">
+
                 <div class="video" onclick="changeVideo('3JZ_D3ELwOQ', 'Amazing Science Video')">
-                    <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Thumbnail">
+                    <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Amazing Science Video">
                     <p>Amazing Science Video</p>
                 </div>
+
                 <div class="video" onclick="changeVideo('hY7m5jjJ9mM', 'Funny Cat Video')">
-                    <img src="https://img.youtube.com/vi/hY7m5jjJ9mM/0.jpg" alt="Thumbnail">
+                    <img src="https://img.youtube.com/vi/hY7m5jjJ9mM/0.jpg" alt="Funny Cat Video">
                     <p>Funny Cat Video</p>
                 </div>
+
                 <div class="video" onclick="changeVideo('L_jWHffIx5E', 'Classic Music Video')">
-                    <img src="https://img.youtube.com/vi/L_jWHffIx5E/0.jpg" alt="Thumbnail">
+                    <img src="https://img.youtube.com/vi/L_jWHffIx5E/0.jpg" alt="Classic Music Video">
                     <p>Classic Music Video</p>
                 </div>
+
             </div>
         </section>
     </main>
